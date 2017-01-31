@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* reset css */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+html {
+	-webkit-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+	background:#fff;
+}
+body {
+	margin:0;
+	font:14px/21px Arial, Helvetica, sans-serif;
+	background:#fff;
+	color:#3b3b3b;
+	min-width:320px;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+nav ul{list-style:none;}
+blockquote, q {quotes:none;}
+a{
+	color:#272b2e;
+	text-decoration:none;
+	outline:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+input, select {vertical-align:middle;}
+img.responsive{
+	display:block;
+	width:100%;
+	max-width:100%;
+}
+#wrapper mark{
+	color:#b12029;
+	font-style:normal;
+	background:none;
+}
+/* main styles */
+#wrapper{
+	position:relative;
+	max-width:100%;
+	padding-top:140px;
+	overflow:hidden;
+}
+/* header */
+#header{
+	background:#fff;
+	
+	
+	
+	
+	
+	border-bottom:1px #aaa solid;
+	box-shadow:0 3px 4px rgba(0,0,0,0.4);	-webkit-box-shadow:0 3px 4px rgba(0,0,0,0.4);
+}
+.mobile-opener{display:none;}
+
+
+
+
+
+
+
+
+
+
+/* main content */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive styles */
+/* mobile view */
+@media only screen and (max-width: 1024px) {
+	#header .mobile-opener{
+		position:absolute;
+		outline:none;
+		display:block;
+		top:5px;
+		right:10px;
+		outline:none;
+		cursor: pointer;
+		z-index: 990;
+		width: 30px;
+		height: 29px;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		text-indent: -9999px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		box-shadow: none;
+		border-radius: none;
+		border: none;
+		cursor: pointer;
+		-webkit-transition: background .3s;
+		transition: background .3s;
+	}
+	.mobile-opener span {
+		display: block;
+		position: absolute;
+		top: 13px;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: #fff;
+		-webkit-transition: background 0s .3s;
+		transition: background 0s .3s;
+	}
+	.mobile-opener span:after,
+	.mobile-opener span:before{
+		-webkit-transition-duration: .3s,.3s;
+		transition-duration: .3s,.3s;
+		-webkit-transition-delay: .3s,0s;
+		transition-delay: .3s,0s;
+		position: absolute;
+		display: block;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		content: "";
+	}
+	.mobile-opener span:before{
+		-webkit-transition-property: top,-webkit-transform;
+		transition-property: top,transform;
+		top:-10px;
+	}
+	.mobile-opener span:after{
+		-webkit-transition-property: bottom,-webkit-transform;
+		transition-property: bottom,transform;
+		bottom: -10px;
+	}
+	.nav-visible .mobile-opener span{
+		background: 0 0;
+	}
+	.nav-visible .mobile-opener span:after,
+	.nav-visible .mobile-opener span:before{
+		-webkit-transition-delay: 0s,.3s;
+		transition-delay: 0s,.3s;
+	}
+	.nav-visible .mobile-opener span:before{
+		top: 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		background:#fff;
+	}
+	.nav-visible .mobile-opener span:after{
+		bottom: 0;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		background:#fff;
+	}
+	.header-bar{
+		position:fixed;
+		left:0;
+		top:0;
+		height:40px;
+		padding:0;
+		z-index:900;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+@media only screen and (max-width: 750px) {
+	
+	
+	
+}
+@media only screen and (max-width: 485px) {
+	
+	
+	
+}
